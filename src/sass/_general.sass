@@ -8,6 +8,23 @@ nav
   height: 50px
   background-color: #212121
   z-index: 2
+.menu_burger
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  width: 25px
+  height: 18px
+  cursor: pointer
+  position: absolute
+  right: 20px
+  top: 50%
+  transform: translateY(-50%)
+
+  span
+    display: block
+    height: 3px
+    background-color: #fff
+    border-radius: 2px
 
 .menu
   display: flex
@@ -189,7 +206,7 @@ nav
     border-radius: 100%
 
   &_description
-    width: 343px
+    width: 60%
 
   &_title
     line-height: 21px

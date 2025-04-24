@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UBER</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="src/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="dist/styles/style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
+                <div class="menu_burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
@@ -28,7 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 offset-md-1">
-                        <a href="#" class="subheader_logo"><img src="img/logo.png" alt="logo"></a>
+                        <a href="#" class="subheader_logo"><img src="src/img/logo.png" alt="logo"></a>
                         <div class="subheader_text">
                             Официальный партнер Uber в Москве
                         </div>
@@ -79,7 +84,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/1.png" alt="1" class="benefits_icon">
+                            <img src="src/icons/benefits/1.png" alt="1" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -97,7 +102,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/5.png" alt="5" class="benefits_icon">
+                            <img src="src/icons/benefits/5.png" alt="5" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -115,7 +120,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/2.png" alt="2" class="benefits_icon">
+                            <img src="src/icons/benefits/2.png" alt="2" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -133,7 +138,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/6.png" alt="6" class="benefits_icon">
+                            <img src="src/icons/benefits/6.png" alt="6" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -151,7 +156,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/3.png" alt="3" class="benefits_icon">
+                            <img src="src/icons/benefits/3.png" alt="3" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -169,7 +174,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/7.png" alt="7" class="benefits_icon">
+                            <img src="src/icons/benefits/7.png" alt="7" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -188,7 +193,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/4.png" alt="4" class="benefits_icon">
+                            <img src="src/icons/benefits/4.png" alt="4" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -205,7 +210,7 @@
                 <div class="col-md-6">
                     <div class="benefits_wrapper">
                         <div class="benefits_round">
-                            <img src="icons/benefits/8.png" alt="8" class="benefits_icon">
+                            <img src="src/icons/benefits/8.png" alt="8" class="benefits_icon">
                         </div>
                         <div class="benefits_description">
                             <div class="benefits_title">
@@ -274,7 +279,7 @@
             <div class="label label_white">Возможности</div>
             <div class="title title_white">Выбор - отличная штука!</div>
             <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
-            <img src="img/car.png" alt="car" class="selection_img">
+            <img src="src/img/car.png" alt="car" class="selection_img">
             <div class="selection_description">
                 Машины на каждый день.<br>
                 Лучше, быстрее и дешевле, чем такси
@@ -390,18 +395,26 @@
             <div>
                 <div class="footer_mobile">
                     <a href="#">
-                        <img src="img/app_store.png" alt="App Store">
+                        <img src="src/img/app_store.png" alt="App Store">
                     </a>
                     <a href="#">
-                        <img src="img/google_play.png" alt="Google play">
+                        <img src="src/img/google_play.png" alt="Google play">
                     </a>
                     <a href="#">
-                        <img src="img/windows_store.png" alt="Windows store">
+                        <img src="src/img/windows_store.png" alt="Windows store">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/3b7f1151aa.js" crossorigin="anonymous"></script>
+    <script>
+        const burger = document.querySelector('.menu_burger')
+        const menu = document.querySelector('.menu')
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

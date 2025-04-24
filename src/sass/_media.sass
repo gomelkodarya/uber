@@ -12,8 +12,17 @@
   .benefits
     &_wrapper
       align-items: flex-start
-    &_description
-      width: 300px
+
+  .footer_wrapper
+    gap: 20px
+    flex-direction: column
+    justify-content: center
+  .footer_wrapper > div
+    display: flex
+    justify-content: center
+    width: 100%
+  .footer_wrapper > div:nth-child(3)
+    justify-content: center
 
 @media (max-width: 991px)
   .menu
@@ -34,4 +43,36 @@
       height: 40px
       width: 100%
 
+  .mobile
+    &_item
+      width: 300px
+
 @media (max-width: 776px)
+  .subheader
+    padding: 30px 0
+    height: auto
+  .promo
+    padding: 350px 0 135px 0
+  .selection_img
+    width: 100%
+  .selection
+    padding: 57px 0 0 0
+    min-height: auto
+  .menu_burger
+    display: flex
+  .menu
+    display: none
+    flex-direction: column
+    background-color: #212121
+    position: absolute
+    top: 60px
+    left: 0
+    width: 100%
+    padding: 20px
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+    &.active
+      display: flex
+
+@media (max-width: 562px)
+  //.benefits_description
+  //  width: 65%

@@ -1,0 +1,25 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/sass/style.sass dist/styles/style.css --watch"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomelkodarya/uber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomelkodarya/uber/issues"
+  },
+  "homepage": "https://github.com/gomelkodarya/uber#readme",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}
